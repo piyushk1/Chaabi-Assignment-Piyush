@@ -1,0 +1,45 @@
+/* Sidebar.module.css */
+.container {
+  width: 356px;
+  height: 1117px;
+}
+.logo_container {
+  width: 204px;
+  height: 56.96104049682617px;
+  top: 40px;
+  left: 76px;
+}
+.logo img {
+  width: 204px;
+  height: 56.96104049682617px;
+  top: 40px;
+  left: 76px;
+}
+.seperator {
+  /* Separator */
+
+  width: 576.93px;
+  height: 1.89px;
+
+  background: rgba(51, 51, 51, 0.2);
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+#menu-title {
+  /* Common styles for all menu item titles */
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 27px;
+  text-transform: capitalize;
+  color: #0d62ff;
+}
+
+.menu-list {
+  display: flex;
+}
