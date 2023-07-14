@@ -30,6 +30,11 @@ The project follows a modular structure with the following components:
 - React.js
 - CSS3
 
+## Figma Design
+[Figma Design](https://www.figma.com/file/8D0pahLR37tuD4JljilOup/Untitled?type=design&node-id=1-62&mode=design&t=bkUBtnPK3uTuryFr-0)
+
+The task for this project was to convert the Figma design into a responsive React code.
+
 ## License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
