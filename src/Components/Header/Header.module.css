@@ -1,4 +1,3 @@
-/* Header.module.css */
 
 .headerBackground {
   position: absolute;
@@ -60,7 +59,6 @@
   display: none; /* Hide on mobile */
 }
 
-/* Media query for mobile devices */
 @media only screen and (min-width: 600px) {
   .headerBackground {
     width: 1372px;

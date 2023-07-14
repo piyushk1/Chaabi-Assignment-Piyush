@@ -1,0 +1,19 @@
+.container {
+    width: 996px;
+    height: 413px;
+    position: absolute;
+    top: 400px; /* Adjust the top position as per your requirement */
+    left: 720px;
+    border-radius: 10px;
+    border: 2px solid blue;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+h5{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 21px;
+    margin-bottom: 10px;
+}

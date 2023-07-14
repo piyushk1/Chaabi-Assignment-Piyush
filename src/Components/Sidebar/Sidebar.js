@@ -1,98 +1,42 @@
 import React from "react";
 import styles from "./Sidebar.module.css";
 import logo from "./logo.png";
-import game from "./Game.png";
-import ticketStar from "./TicketStar.png";
+import category from "./Category.png";
 import Location from "./Location.png";
-export default function Sidebar() {
+import ticketStar from "./TicketStar.png";
+import game from "./Game.png";
+
+export default function Sidebar(props) {
   return (
     <div className={styles.container}>
-      <div className={styles.logo_container}>
-        <div className={styles.logo}>
-          <img src={logo} alt="logo" />
-        </div>
+      <div className={styles.logo}>
+        <img src={logo} alt="Logo" />
+        <div className={styles.separator}></div>
       </div>
-      <div className="separator"></div>
-      <div className="options-container">
-        <div className="menu-list">
-          <div className="training">
-            <img src={game} alt="Training Icon" />
-            <span
-              style={{
-                fontFamily: "Poppins",
-                fontSize: "19px",
-                fontWeight: 400,
-                lineHeight: "27px",
-                letterSpacing: "0em",
-                textAlign: "left"
-              }}
-            >
-              Training
-            </span>
-          </div>
-          <div className="users">
-            <img src={ticketStar} alt="Users Icon" />
-            <span
-              style={{
-                fontFamily: "Poppins",
-                fontSize: "19px",
-                fontWeight: 400,
-                lineHeight: "27px",
-                letterSpacing: "0em",
-                textAlign: "left"
-              }}
-            >
-              Users
-            </span>
-          </div>
-          <div className="analytics">
-            <img src={Location} alt="Analytics Icon" />
-            <span
-              style={{
-                fontFamily: "Poppins",
-                fontSize: "19px",
-                fontWeight: 400,
-                lineHeight: "27px",
-                letterSpacing: "0em",
-                textAlign: "left"
-              }}
-            >
-              Analytics
-            </span>
-          </div>
-          <div className="my-account">
-            <img src={Location} alt="My Account Icon" />
-            <span
-              style={{
-                fontFamily: "Poppins",
-                fontSize: "19px",
-                fontWeight: 400,
-                lineHeight: "27px",
-                letterSpacing: "0em",
-                textAlign: "left",
-                background: "rgba(13, 98, 255, 1)"
-              }}
-            >
-              My Account
-            </span>
-          </div>
-          <div className="support">
-            <img src={Location} alt="Support Icon" />
-            <span
-              style={{
-                fontFamily: "Poppins",
-                fontSize: "19px",
-                fontWeight: 400,
-                lineHeight: "27px",
-                letterSpacing: "0em",
-                textAlign: "left"
-              }}
-            >
-              Support
-            </span>
-          </div>
-        </div>
+
+      <div className={styles.dashboard}>
+        <img src={category} alt="Category Icon" className={styles.categoryIcon} />
+        <span>Dashboard</span>
       </div>
+
+      <div className={styles.menuList}>
+        <MenuItem label="Trainings" icon={game} />
+        <MenuItem label="Users" icon={ticketStar} />
+        <MenuItem label="Analytics" icon={Location} />
+        <MenuItem label="My Account" icon={Location} />
+        <MenuItem label="Support" icon={Location} />
+      </div>
+
+      <div className={styles.sidebar}>{/* Sidebar content goes here */}</div>
+    </div>
+  );
+}
+
+function MenuItem({ label, icon }) {
+  return (
+    <div className={styles.menuItem}>
+      <img src={icon} alt="Menu Icon" className={styles.menuIcon} />
+      <span>{label}</span>
     </div>
   );
 }
