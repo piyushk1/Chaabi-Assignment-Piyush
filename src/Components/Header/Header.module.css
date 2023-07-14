@@ -5,6 +5,7 @@
   height: 145px;
   background: #0c58e6;
   border-radius: 0px 0px 10px 10px;
+  margin: 10px;
 }
 
 .textContainer {
@@ -52,11 +53,11 @@
 }
 
 .ellipse4 {
-  display: none; /* Hide on mobile */
+  display: none;
 }
 
 .ellipse5 {
-  display: none; /* Hide on mobile */
+  display: none;
 }
 
 @media only screen and (min-width: 600px) {

@@ -5,6 +5,7 @@ import Sidebar from "./Sidebar/Sidebar";
 import Analytics from "./Analytics/Analytics";
 import Bar from "./Bar/Bar";
 import PieChart from "./PieChart/PieChart";
+import Content from "./Content/Content";
 export default function Dashboard(props) {
   return (
     <div>
@@ -13,6 +14,7 @@ export default function Dashboard(props) {
       <Analytics/>
       <PieChart/>
       <Bar/>
+      <Content/>
     </div>
   );
 }
