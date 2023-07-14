@@ -8,13 +8,14 @@ import PieChart from "./PieChart/PieChart";
 import Content from "./Content/Content";
 export default function Dashboard(props) {
   return (
-    <div>
-      <Header />
-      <Sidebar />
-      <Analytics/>
-      <PieChart/>
-      <Bar/>
-      <Content/>
-    </div>
+   <>
+    <Header />
+    <Sidebar /> 
+    <Analytics/> 
+    <PieChart/>
+    <Bar/>
+    <Content/>   
+</>
+      
   );
 }

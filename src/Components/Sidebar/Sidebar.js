@@ -26,8 +26,6 @@ export default function Sidebar(props) {
         <MenuItem label="My Account" icon={Location} />
         <MenuItem label="Support" icon={Location} />
       </div>
-
-      <div className={styles.sidebar}>{/* Sidebar content goes here */}</div>
     </div>
   );
 }

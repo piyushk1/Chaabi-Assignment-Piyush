@@ -1,6 +1,9 @@
 
 .container {
-  position: relative;
+  position: fixed;
+  width: 356px;
+  height: 1117px;
+  top: 5px;
 }
 
 .logo {
@@ -12,7 +15,7 @@
 
 .dashboard {
   width: 195px;
-  height: 20px;
+  height: 40px;
   margin-top: 70px;
   margin-left: 34.9019775390625px;
   padding: 9.30718994140625px 27.92156982421875px;
@@ -38,20 +41,20 @@
   margin-left: 70px;
   background-color: white;
   padding: 10px;
-  
 }
 
 .menuItem {
   display: flex;
   align-items: center;
-  margin-top: 5px;
-  margin-left: 65px;
+  margin-top: 3px;
+  margin-left: 2px;
   margin-right: 10px;
   padding: 9.30718994140625px 27.92156982421875px;
   border-radius: 4.653594970703125px;
   color: rgba(13, 98, 255, 1);
   font-family: Poppins;
   font-size: 19px;
+  height: 40px;
 }
 
 .menuIcon {
@@ -72,16 +75,36 @@
 
 .sidebar {
   background-color: white;
-  width: 100%; 
+  width: 100%;
   height: auto;
 }
 
-@media (min-width: 768px) {
-  .sidebar {
-    width: 356px;
-    height: 1117px;
+@media (max-width: 480px) {
+  .container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 0;
   }
+
+  .logo {
+    margin: 20px auto;
+  }
+
+  .dashboard {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .menuList {
+    margin: 10px;
+    padding: 5px;
+  }
+
   .menuItem {
-    margin-left: 0; 
+    margin-left: 75px;
+    padding: 5px;
+    font-size: 16px;
+    height: 30px;
   }
 }

@@ -1,6 +1,6 @@
 
 .headerBackground {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 145px;
   background: #0c58e6;
@@ -14,9 +14,8 @@
   align-items: flex-start;
   padding: 0px;
   gap: 7.72px;
-  position: absolute;
+  position: relative;
   width: 100%;
-  left: 0;
   top: 25px;
 }
 
@@ -87,35 +86,5 @@
     height: 2080.19px;
     left: 1893.01px;
     top: -224.81px;
-  }
-
-  .ellipse4 {
-    display: block; /* Show on larger screens */
-    position: absolute;
-    width: 1577.88px;
-    height: 1611.6px;
-    left: 1424.42px;
-    top: 5.42px;
-    background: #ffffff;
-    mix-blend-mode: multiply;
-    opacity: 0.75;
-    box-shadow: inset 23.1561px 30.8748px 177.53px 23.1561px
-      rgba(6, 8, 89, 0.75);
-    transform: rotate(90deg);
-  }
-
-  .ellipse5 {
-    display: block; /* Show on larger screens */
-    position: absolute;
-    width: 2038.33px;
-    height: 2080.19px;
-    left: 1893.01px;
-    top: -224.81px;
-    background: #ffffff;
-    mix-blend-mode: multiply;
-    opacity: 0.75;
-    box-shadow: inset 23.1561px 30.8748px 177.53px 23.1561px
-      rgba(6, 8, 89, 0.75);
-    transform: rotate(90deg);
   }
 }
