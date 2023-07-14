@@ -17,7 +17,7 @@ The project follows a modular structure with the following components:
 ## Installation
 
 1. Clone the repository: `git clone <repository-url>`
-2. Navigate to the project directory: `cd react-frontend-build`
+2. Navigate to the project directory: `cd  Chaabi-Assignment-Piyush`
 3. Install dependencies: `npm install`
 
 ## Usage
